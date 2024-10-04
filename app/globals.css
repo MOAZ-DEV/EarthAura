@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./styles/_fonts.css";
+@import "./styles/_markdowns.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

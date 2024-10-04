@@ -1,0 +1,54 @@
+.markdown {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.markdown h1 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 125%;
+    text-indent: 32px;
+    color: #121212;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.markdown blockquote {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 99%;
+    text-align: center;
+
+    color: #121212;
+
+    opacity: 0.45;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.markdown img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 24px;
+    margin: 32px 0;
+    filter: brightness(.9);
+}
+
+.markdown ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.markdown li {
+    margin-bottom: 0.5rem;
+}
