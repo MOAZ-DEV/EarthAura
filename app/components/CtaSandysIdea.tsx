@@ -61,7 +61,7 @@ export const CtaSandysIdea = () => {
         <Video />
         <div className="flex flex-col items-start gap-10 justify-center w-full py-20 max-w-[875px]">
             <motion.div {...(animateUp(.7, .7))}>
-                <h1 className="text-6xl font-normal uppercase text-start text-white mt-40">
+                <h1 className="text-6xl max-lg:text-4xl max-sm:text-3xl font-normal uppercase text-start text-white mt-40">
                     INTERACTIONS BETWEEN EARTH&apos;S SYSTEMS
                 </h1>
             </motion.div>
