@@ -51,9 +51,7 @@ export const Hero = ({ className, ...props }: SectionProps) => {
         return (
             <motion.div {...(slideDown(1.25))} className="absolute z-0 h-full w-full overflow-hidden">
                 <video
-                    className="w-full"
-                    width="320"
-                    height="240"
+                    className="h-screen w-full object-cover"
                     autoPlay
                     muted
                     loop

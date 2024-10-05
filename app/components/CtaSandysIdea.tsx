@@ -38,9 +38,7 @@ export const CtaSandysIdea = () => {
         return (
             <motion.div {...(slideDown(1.25))} className="absolute top-0 left-0 z-0 h-full w-full overflow-hidden">
                 <video
-                    className="w-full"
-                    width="320"
-                    height="240"
+                    className="h-full w-full object-cover"
                     autoPlay
                     muted
                     loop
@@ -59,7 +57,7 @@ export const CtaSandysIdea = () => {
         );
     };
 
-    return <div className="relative flex items-center justify-start py-20 px-40 w-full">
+    return <div className="relative flex items-center justify-start py-20 px-40 max-lg:px-10 max-lg:py-10 max-sm:px-4 w-full">
         <Video />
         <div className="flex flex-col items-start gap-10 justify-center w-full py-20 max-w-[875px]">
             <motion.div {...(animateUp(.7, .7))}>

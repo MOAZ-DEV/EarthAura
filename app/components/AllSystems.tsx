@@ -37,7 +37,7 @@ export const AllSystems = ({ Systems, className }: AllSystemsProps) => {
             </Link>
         </motion.div>
     }
-    return <div id="systems" className={"flex items-center justify-center bg-white py-10 " + className}>
+    return <div id="systems" className={"flex items-center justify-center bg-white py-40 " + className}>
         <div className="flex flex-wrap justify-center items-center w-fit text-center max-w-[1575px]">
             {Systems.map((item, index) => <Item key={index} {...item}{...{ index }} />)}
         </div>

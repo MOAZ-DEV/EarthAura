@@ -7,7 +7,7 @@ import { CtaSandysIdea } from "./components/CtaSandysIdea";
 
 export default function Home() {
     return (
-        <Main className="flex flex-col gap-40 max-lg:!gap-10 bg-white">
+        <Main className="flex flex-col gap-0 bg-white">
             <Hero className="max-xl:!px-6" />
             {/* <CtaClimateChange className="max-xl:!px-8 max-xl:!gap-10 max-md:flex-col" /> */}
             <CtaSandysIdea />
