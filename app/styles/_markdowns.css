@@ -12,10 +12,32 @@
     line-height: 125%;
     text-indent: 32px;
     color: #121212;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+}
+
+.markdown h3 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #121212;
+    margin: 75px 0 16px 0;
+}
+
+.markdown p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+
+    color: #121212;
+    opacity: .90;
+
+}
+
+.markdown iframe {
+    margin: 32px 0;
 }
 
 .markdown blockquote {
