@@ -51,14 +51,13 @@ interface NavProps {
 export const Nav = ({ className, ...props }: NavProps) => {
     const
         Logo = () => {
-            return <p><Link className="font-semibold max-sm:flex flex-col" href={"/"}>EarthAura</Link> <span>| Harmonizing Earth Systems</span></p>
+            return <p><Link className="font-semibold max-sm:flex flex-col" href={"/"}>EarthAura</Link> <span className="max-sm:opacity-0">| Harmonizing Earth Systems</span></p>
         },
         Menu = () => {
             return <ul className="flex flex-row gap-4 max-md:!flex-col max-md:items-end max-md:gap-1">
                 {[
                     { label: "Systems", href: "/#systems", },
                     { label: "Interconnections", href: "/#Interconnections", },
-                    { label: "Info", href: "/info", },
                 ].map(({ label, href }) =>
                     <li key={label} className="opacity-75 hover:opacity-95 transition-opacity relative after:absolute after:-bottom-[2px] after:left-0 after:h-[2px] after:w-0 after:bg-white after:rounded-full hover:after:w-full after:transition-all">
                         <Link href={href}>{label}</Link>
