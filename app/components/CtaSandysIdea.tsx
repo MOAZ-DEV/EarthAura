@@ -57,7 +57,7 @@ export const CtaSandysIdea = () => {
         );
     };
 
-    return <div className="relative flex items-center justify-start py-20 px-40 max-lg:px-10 max-lg:py-10 max-sm:px-4 w-full">
+    return <div className="relative flex items-center justify-start py-20 px-40 max-lg:px-10 max-lg:py-10 max-sm:px-4 h-screen w-full">
         <Video />
         <div className="flex flex-col items-start gap-10 justify-center w-full py-20 max-w-[875px]">
             <motion.div {...(animateUp(.7, .7))}>

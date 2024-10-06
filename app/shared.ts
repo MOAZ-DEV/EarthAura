@@ -2,64 +2,71 @@ import Agriculture from "@/assets/agriculture-unsplash.jpg";
 import Biodiversity from "@/assets/bioversity-unsplash.jpg";
 import Disasters from "@/assets/desasters-unsplash.jpg";
 import GreenhouseGases from "@/assets/greenhouse-gases-unsplash.jpg";
+import Wild from "@/assets/Wild.jpg";
+import WaterQuality from "@/assets/alex-perez-wEgR12N01Tk-unsplash.jpg";
+import Health from "@/assets/health-and-air-quality.jpg";
+import Sustainability from "@/assets/sus.jpg";
+import SeaLevel from "@/assets/sea-level.jpg";
+
+
 
 export const Systems = [
-    { label: "agriculture", href: "/system/agriculture" },
-    { label: "biodiversity", href: "/system/biodiversity" },
-    { label: "disasters", href: "/system/disasters" },
-    { label: "greenhouse gases", href: "/system/greenhouse-gases" },
-    { label: "health and air quality", href: "/system/health-and-air-quality" },
-    { label: "sea level rise", href: "/system/sea-level-rise" },
-    { label: "sustainable energy", href: "/system/sustainable-energy" },
-    { label: "water resources", href: "/system/water-resources" },
-    { label: "wildfires", href: "/system/wildfires" },
+    { label: "agriculture", href: "/articles/system/agriculture" },
+    { label: "biodiversity", href: "/articles/system/biodiversity" },
+    { label: "disasters", href: "/articles/system/disasters" },
+    { label: "greenhouse gases", href: "/articles/system/greenhouse-gases" },
+    { label: "health and air quality", href: "/articles/system/health-and-air-quality" },
+    { label: "sea level rise", href: "/articles/system/sea-level-rise" },
+    { label: "sustainable energy", href: "/articles/system/sustainable-energy" },
+    { label: "water resources", href: "/articles/system/water-resources" },
+    { label: "wildfires", href: "/articles/system/wildfires" },
 ];
 
-export const InterconnectionsList = [
+export const InterconnectsList = [
     {
-        label: "agriculture",
+        label: "Agriculture",
         image: Agriculture,
-        href: "/interconnection/agriculture"
+        href: "/articles/Interconnect/agriculture"
     },
     {
-        label: "biodiversity",
+        label: "Biodiversity",
         image: Biodiversity,
-        href: "/interconnection/biodiversity"
+        href: "/articles/Interconnect/biodiversity"
     },
     {
         label: "Natural disaster",
         image: Disasters,
-        href: "/interconnection/disasters"
+        href: "/articles/Interconnect/disasters"
     },
     {
-        label: "greenhouse gases",
+        label: "Greenhouse gases",
         image: GreenhouseGases,
-        href: "/interconnection/greenhouse-gases"
+        href: "/articles/Interconnect/green-house-gases"
     },
     {
         label: "Health and air quality",
-        image: GreenhouseGases,
-        href: "/interconnection/health-and-air-quality"
+        image: Health,
+        href: "/articles/Interconnect/health-and-air-quality"
     },
     {
         label: "Water quality",
-        image: GreenhouseGases,
-        href: "/interconnection/water-quality"
+        image: WaterQuality,
+        href: "/articles/Interconnect/water-resources"
     },
     {
         label: "Sea-level raising",
-        image: GreenhouseGases,
-        href: "/interconnection/sea-level-raising"
+        image: SeaLevel,
+        href: "/articles/Interconnect/sea-level-raising"
     },
     {
         label: "Wildfires",
-        image: GreenhouseGases,
-        href: "/interconnection/wildfires"
+        image: Wild,
+        href: "/articles/Interconnect/wildfires"
     },
     {
-        label: "Sustainability-of-energy",
-        image: GreenhouseGases,
-        href: "/interconnection/sustainability-of-energy"
+        label: "Sustainability of Energy",
+        image: Sustainability,
+        href: "/articles/Interconnect/sustainable-energy"
     },
 ]
 

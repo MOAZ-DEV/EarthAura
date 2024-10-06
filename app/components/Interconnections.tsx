@@ -10,7 +10,7 @@ interface InterconnectionsItem {
     href: string;
 };
 interface InterconnectionsProps {
-    InterconnectionsList: InterconnectionsItem[];
+    InterconnectsList: InterconnectionsItem[];
 };
 
 const
@@ -32,14 +32,13 @@ const
         }
     }
 
-export const Interconnections = ({ InterconnectionsList }: InterconnectionsProps) => {
+export const Interconnections = ({ InterconnectsList }: InterconnectionsProps) => {
 
-    const Item = ({ label, image }: InterconnectionsItem) => {
-        return <div
-            className="group flex flex-col gap-8 p-12 my-[-1px] mx-[-.5px]">
+    const Item = ({ label, image, href }: InterconnectionsItem) => {
+        return <div className="group flex flex-col gap-8 px-2  max-md:!p-0 max-xl:gap-4 mt-6">
             <div className="flex flex-row items-center justify-between w-full px-6">
                 <p className="text-xl uppercase text-black mx-a">{label}</p>
-                <Link className="text-xl underline text-black mx-a opacity-45 hover:opacity-90 transition-opacity" href={""}>Learn More</Link>
+                <Link className="text-xl underline text-black mx-a opacity-45 hover:opacity-90 transition-opacity" href={href}>Learn More</Link>
             </div>
             <div className="overflow-hidden rounded-2xl">
                 <Image
@@ -51,9 +50,9 @@ export const Interconnections = ({ InterconnectionsList }: InterconnectionsProps
         </div>
     }
 
-    return <section className="flex flex-col gap-8">
-        <div className="grid grid-cols-2 gap-4 px-40">
-            {InterconnectionsList.map((interconnect, index) => <motion.div key={index} {...(animateUp(1, index))}>
+    return <section className="flex flex-col gap-8" id="Interconnections">
+        <div className="grid grid-cols-2 max-lg:grid-cols-1 max-md:!p-4 gap-4 p-20 max-2xl:!gap-12 max-2xl:!px-20 max-xl:!px-10">
+            {InterconnectsList.map((interconnect, index) => <motion.div key={index} {...(animateUp(1, index))}>
                 <Item {...interconnect} {...{ index }} />
             </motion.div>)}
         </div>

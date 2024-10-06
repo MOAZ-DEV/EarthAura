@@ -57,7 +57,7 @@ export const Hero = ({ className, ...props }: SectionProps) => {
                     loop
                     controlsList="nodownload nofullscreen noremoteplayback">
                     <source
-                        src="/assets/EarthRotation-DayNightCycle.mp4"
+                        src="/assets/Earth Zoom In Realistic Clouds With Alpha Matte.mp4"
                         type="video/mp4" />
                     <track
                         src="/path/to/captions.vtt"
