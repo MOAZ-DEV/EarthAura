@@ -15,7 +15,7 @@ export const Systems = [
     { label: "biodiversity", href: "/articles/system/biodiversity" },
     { label: "disasters", href: "/articles/system/disasters" },
     { label: "greenhouse gases", href: "/articles/system/greenhouse-gases" },
-    { label: "health and air quality", href: "/articles/system/health-&-air-quality" },
+    { label: "health and air quality", href: "/articles/system/health-n-air-quality" },
     { label: "sea level rise", href: "/articles/system/sea-level-rise" },
     { label: "sustainable energy", href: "/articles/system/sustainable-energy" },
     { label: "water resources", href: "/articles/system/water-resources" },
