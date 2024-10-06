@@ -79,7 +79,7 @@ interface FooterProps {
 export const Footer = ({ }: FooterProps) => {
 
     return <footer className="flex flex-row items-center justify-center py-6 px-20 max-md:!px-6 text-black opacity-45 w-screen">
-        <p>Copyright © 2024 EarthEra Inc. All rights reserved.</p>
+        <p>Copyright © 2024 EarthAura Inc. All rights reserved.</p>
     </footer>
 }
 
