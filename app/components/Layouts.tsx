@@ -30,9 +30,9 @@ export const MarkdownLayout = {
         </main>;
     },
     System:({ children, }: MainProps) => {
-        return <main className="flex flex-col gap-40 pt-40 min-h-screen bg-white">
+        return <main className="flex flex-col gap-40 pt-40 min-h-screen w-screen bg-white">
             <Nav className="invert" />
-            <div className="flex flex-col gap-6 items-center h-full w-full min-h-screen text-black">
+            <div className="flex flex-col gap-6 items-center h-full w-screen min-h-screen text-black">
                 <div className="flex flex-col max-w-[940px] markdown">
                     {children}
                 </div>
@@ -51,7 +51,7 @@ interface NavProps {
 export const Nav = ({ className, ...props }: NavProps) => {
     const
         Logo = () => {
-            return <p><Link className="font-semibold" href={"/"}>EarthAura</Link> | Harmonizing Earth Systems</p>
+            return <p><Link className="font-semibold max-sm:flex flex-col" href={"/"}>EarthAura</Link> <span>| Harmonizing Earth Systems</span></p>
         },
         Menu = () => {
             return <ul className="flex flex-row gap-4 max-md:!flex-col max-md:items-end max-md:gap-1">
@@ -79,12 +79,8 @@ interface FooterProps {
 
 export const Footer = ({ }: FooterProps) => {
 
-    return <footer className="flex flex-row items-center justify-between p-12 text-black opacity-45 w-screen">
+    return <footer className="flex flex-row items-center justify-center py-6 px-20 max-md:!px-6 text-black opacity-45 w-screen">
         <p>Copyright © 2024 EarthEra Inc. All rights reserved.</p>
-
-        <div>
-            
-        </div>
     </footer>
 }
 
