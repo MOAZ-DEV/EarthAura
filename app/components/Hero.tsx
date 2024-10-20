@@ -1,6 +1,8 @@
 'use client'
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import LinkSvg from "@/assets/Link.svg";
+import Image from "next/image";
 
 interface SectionProps {
     className?: string;
@@ -78,10 +80,10 @@ export const Hero = ({ className, ...props }: SectionProps) => {
             </h1>
         </motion.div>
 
-        {/* <button className="flex flex-row gap-4 py-3 px-5 bg-white text-black rounded-full group hover:bg-[#ffffff25] hover:!text-white backdrop-blur-md transition-all">
+        <motion.button {...(animateUp(1.45))} className="flex flex-row gap-4 py-3 px-5 bg-white text-black rounded-full group hover:bg-[#ffffff25] hover:!text-white backdrop-blur-md transition-all">
             Learn How You Can Help
             <Image className="group-hover:invert transition-all" src={LinkSvg} alt={""} />
-        </button> */}
+        </motion.button>
     </section>
         ;
 }
